@@ -24,7 +24,9 @@ return new class extends Migration
             $table->text('title');
             $table->text('content');
             $table->text('slug');
-            $table->text('photo_background');
+            $table->text('photo_background')
+                ->nullable()
+                ->default(null);
             $table->boolean('is_publish')
                 ->default(false);
 
