@@ -5,6 +5,9 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +20,21 @@ use App\Http\Controllers\ProfileController;
 |
 */
 
-Route::middleware('auth')->group(function () {
+Route::prefix('auth')->name('auth.')->group(function () {
+    Route::middleware('guest')->group(function () {
+        Route::get('login', [LoginController::class, 'index'])->name('login');
+        Route::post('login', [LoginController::class, 'login'])->name('login');
+
+        Route::get('register', [RegisterController::class, 'index'])->name('register');
+        Route::post('register', [RegisterController::class, 'register'])->name('register');
+        /*Route::get('forgot', Forgot::class)->name('forgot');*/
+    });
+
+    Route::get('logout', function (){
+        Auth::logout();
+        return redirect()->route('auth.login');
+    })->name('logout');
+    
     Route::resource('cerita', PostController::class)
         ->except(['index', 'show'])
         ->parameter('cerita', 'post:slug');
@@ -36,7 +53,7 @@ Route::middleware('auth')->group(function () {
         ->name('profile.update-photo');
 });
 
+Route::get('/', [DashboardController::class, 'index'])->name('home');
+
 Route::get('/cerita', [PostController::class, 'index'])->name('cerita.index');
 Route::get('/cerita/{post:slug}', [PostController::class, 'show'])->name('cerita.show');
-
-
