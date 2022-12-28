@@ -23,6 +23,9 @@ Library JavaScript yang digunakan untuk membangun aplikasi web interaktif. Jquer
 
 ## Cara Penggunaan
 Sesuai dengan deskripsi di awal, situs web CeritaKu ini berisi cerita-cerita dimana pengguna dapat membuat cerita secara pribadi dan dipublikasikan, setra pengguna juga dapat membaca cerita yang diunggah oleh pengguna lain.
+
+Berikut merupakan use case diagram sistem CeritaKu.
+
 ![img 12](desain/usecase.png)
 
 #### Sebelum Masuk / Login
