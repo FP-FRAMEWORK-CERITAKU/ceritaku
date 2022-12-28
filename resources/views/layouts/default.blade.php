@@ -248,9 +248,9 @@
 <div class="drag-target"></div>
 
 <!-- BEGIN: Footer-->
-<footer class="footer footer-static footer-light">
+{{--<footer class="footer footer-static footer-light">
     @include('layouts.partials.footer')
-</footer>
+</footer>--}}
 <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
 <!-- END: Footer-->
 
@@ -293,6 +293,15 @@
             });
         }
     })
+
+    function scrollToElementId(elementId) {
+        if (elementId) {
+            const element = document.getElementById(elementId);
+            if (element) {
+                element.scrollIntoView();
+            }
+        }
+    }
 </script>
 <!-- END: Page JS-->
 
