@@ -30,11 +30,30 @@ Route::prefix('auth')->name('auth.')->group(function () {
         /*Route::get('forgot', Forgot::class)->name('forgot');*/
     });
 
-    Route::get('logout', function (){
+    Route::get('logout', function () {
         Auth::logout();
         return redirect()->route('auth.login');
     })->name('logout');
     
+    Route::resource('cerita', PostController::class)
+        ->except(['index', 'show'])
+        ->parameter('cerita', 'post:slug');
+
+    Route::post('cerita/{post:slug}/comment', [PostController::class, 'storeComment'])
+        ->name('cerita.comment.store');
+    Route::delete('cerita/{post:slug}/comment/{comment}', [PostController::class, 'destroyComment'])
+        ->name('cerita.comment.destroy');
+
+    Route::get('profile', [ProfileController::class, 'index'])
+        ->name('profile.index');
+    // route update, put and patch
+    Route::match(['put', 'patch'], 'profile', [ProfileController::class, 'update'])
+        ->name('profile.update');
+    Route::match(['put', 'patch'], 'profile/photo', [ProfileController::class, 'updatePhoto'])
+        ->name('profile.update-photo');
+});
+
+Route::middleware('auth')->group(function () {
     Route::resource('cerita', PostController::class)
         ->except(['index', 'show'])
         ->parameter('cerita', 'post:slug');
