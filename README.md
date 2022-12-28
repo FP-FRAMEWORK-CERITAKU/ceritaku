@@ -1,66 +1,81 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## Pengantar
+#### Deskripsi Aplikasi
+CeritaKu merupakan sebuah aplikasi website yang dapat digunakan untuk menulis cerita atau blog. Aplikasi ini digunakan untuk menuangkan ide, cerita, atau gagasan apapun yang ingin kita tuliskan. Konten yang disediakan dalam aplikasi ini nantinya dapat dibaca oleh banyak orang yang mengunjungi website ini.
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+#### Disusun oleh:
+<p>    1. Eka Rizqi Mar’atus Sholihah		(19081010022)<br>
+    2. Alfina Damayanti				    (19081010039)<br>
+    3. Muhammad Rakha Firjatullah		(19081010050)<br>
+    4. Daffa Risky Pratama				(19081010052)<br>
+    5. Shawn Hafizh Adefrid				(19081010055)</p>
 
-## About Laravel
+## Teknologi yang digunakan
+Adapun teknologi yang digunakan pada pengembangan sistem atau aplikasi CeritaKu adalah sebagai berikut:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+#### Laravel
+Framework PHP yang digunakan untuk pengembangan aplikasi web. Laravel menyediakan beragam fitur yang mempermudah proses pengembangan aplikasi, seperti routing, autentikasi, dan manajemen database. Laravel juga menyediakan arsitektur MVC (Model-View-Controller) yang membantu dalam pembagian tugas antara front-end dan back-end.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+#### Bootstrap
+Framework CSS yang digunakan untuk membangun website dengan desain yang responsif. Bootstrap menyediakan komponen-komponen yang dapat digunakan untuk membuat layout website, seperti navbar, grid, dan form. Bootstrap juga menyediakan tema yang dapat digunakan untuk memberikan warna dan styling pada website.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+#### jQuery
+Library JavaScript yang digunakan untuk membangun aplikasi web interaktif. Jquery menyediakan beragam fitur yang mempermudah proses pengembangan aplikasi, seperti manipulasi DOM, animasi, dan pemrosesan event. Jquery juga menyediakan sintaks yang mudah digunakan dan memudahkan dalam pemrograman JavaScript.
 
-## Learning Laravel
+## Cara Penggunaan
+Sesuai dengan deskripsi di awal, situs web CeritaKu ini berisi cerita-cerita dimana pengguna dapat membuat cerita secara pribadi dan dipublikasikan, setra pengguna juga dapat membaca cerita yang diunggah oleh pengguna lain.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Berikut merupakan use case diagram sistem CeritaKu.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+![img 12](desain/usecase.png)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+#### Sebelum Masuk / Login
+Pada tahap awal sebelum login, pengguna akan diperlihatkan dengan situs web yang sederhana. Disini pengguna akan diperlihatkan menu search untuk mencari cerita yang ingin dibaca serta main menu berupa dasbor dan jelajah. Namun, pengguna yang belum login tidak dapat membuat serta membaca cerita. Pengguna akan dibawa ke halaman daftar dan melakukan login. Untuk menu login terletak di bagian profil, pengguna dapat memilih profil untuk login.
 
-## Laravel Sponsors
+#### Setelah Login
+Pada tahap selanjutnya, pengguna kita asumsikan telah melakukan tahap login. Disini cara pengguna situs web CeritaKu tidak jauh berbeda saat user belum melakukan login. Yang berbeda hanya pengguna dapat melakukan penulisan cerita dan diunggah, serta bisa membaca cerita. User juga dapat melihat halaman profil yang terletak di foto profil bagian atas kanan. Pada foto profil bagian kanan atas juga terdapat fitur logout. Untuk melakukan penulisan cerita, pengguna bisa masuk ke menu jelajah dan memilih buat postingan.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Fitur Aplikasi CeritaKu
 
-### Premium Partners
+### 1. Halaman Dasbor Tamu
+Fitur ini merupakan tampilan utama ketika pengguna mengakses situs ini. Pada halaman ini berisi menu search serta main menu.
+![img 1](desain/5.png)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+### 2. Menu Guest
+Menu ini berisi menu login kepada pengguna jika belum masuk ke dalam aplikasi.
+![img 2](desain/2.png)
 
-## Contributing
+### 3. Halaman Masuk / Login
+Pada fitur ini pengguna diminta untuk memasukkan nama, email beserta password yang sebelumnya telah diregistrasikan agar dapat mengakses fitur utama pada situs ini, yaitu menulis atau mengunggah cerita.
+![img 3](desain/3.png)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 4. Halaman Daftar
+Pada fitur ini pengguna diminta memasukkan nama, email dan password untuk didaftarkan terlebih dahulu sebagai akun pengguna. Terdapat juga form konfirmasi password untuk mengkonfirmasi password yang digunakan oleh pengguna apakah sesuai atau tidak dengan password yang dimasukkan pada form pertama.
+![img 4](desain/4.png)
 
-## Code of Conduct
+### 5. Halaman Dasbor
+Fitur ini merupakan tampilan utama ketika pengguna telah masuk ke dalam situs ini. Pada halaman ini berisi menu search serta main menu seperti dasbor dan jelajah.
+![img 5](desain/1.png)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 6. Halaman Jelajah
+Merupakan sebuah fitur untuk menjelajahi postingan. Pada fitur ini berisi list postingan CeritaKu. Pengguna dapat memasukkan kata kunci untuk mencari cerita yang ingin dibaca.
+![img 6](desain/6.png)
 
-## Security Vulnerabilities
+### 7. Halaman Detail Cerita
+Fitur ini berisi tentang detail cerita yang meliputi judul cerita, isi cerita, penulis, waktu unggahan dan komentar pada cerita.
+![img 7](desain/7.png)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 8. Halaman Buat Cerita
+Merupakan fitur yang tersedia pada situs web CeritaKu untuk membuat sebuah cerita atau postingan.
+![img 8](desain/8.png)
 
-## License
+### 9. Pilihan Status Terbit dan Text Editor
+Memiliki pilhan untuk memilih status terbit akan diterbitkan atau tidak, size serta format penulisan.
+![img 9](desain/9.png)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 10. Menu Profil
+Menu ini berisi menu logout kepada pengguna jika ingin keluar dari situs web CeritaKu.
+![img 10](desain/10.png)
+
+### 11. Profil
+Merupakan sebuah fitur yang dapat membuat pengguna melihat profil atau identitas sebagai anggota situs web CeritaKu, serta melakukan perubahan terhadap data atau identitas pengguna. Fitur ini berisi foto profil pengguna, nama pengguna, email, dan password dari pengguna.
+![img 11](desain/11.png)
