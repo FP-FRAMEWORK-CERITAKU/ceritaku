@@ -1,7 +1,7 @@
 <div class="main-menu-content">
     <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
         <li class="nav-item">
-            <a class="d-flex align-items-center" href="/">
+            <a class="d-flex align-items-center" href="{{ route('home') }}">
                 <i data-feather="home"></i>
                 <span class="menu-title text-truncate">Dasbor</span>
             </a>
@@ -13,7 +13,7 @@
             <i data-feather="more-horizontal"></i>
         </li>
         <li class="nav-item">
-            <a class="d-flex align-items-center" href="#">
+            <a class="d-flex align-items-center" href="{{ route('cerita.index') }}">
                 <i data-feather="hash"></i>
                 <span class="menu-title text-truncate">Jelajahi</span>
             </a>
