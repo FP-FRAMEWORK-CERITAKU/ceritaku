@@ -31,6 +31,8 @@ class RegisterController extends Controller
             return redirect()->back()->withInput()->withErrors('Ada kesalahan saat membuat akun');
         }
 
+        $user->assignRole('Anggota');
+
         auth()->login($user);
         return redirect()->route('home');
     }
