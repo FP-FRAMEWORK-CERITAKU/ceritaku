@@ -2,11 +2,11 @@
 CeritaKu merupakan sebuah aplikasi website yang dapat digunakan untuk menulis cerita atau blog. Aplikasi ini digunakan untuk menuangkan ide, cerita, atau gagasan apapun yang ingin kita tuliskan. Konten yang disediakan dalam aplikasi ini nantinya dapat dibaca oleh banyak orang yang mengunjungi website ini.
 
 Disusun oleh:
-<li>1. Eka Rizqi Mar’atus Sholihah		19081010022</li>
-<li>2. Alfina Damayanti				    19081010039</li>
-<li>3. Muhammad Rakha Firjatullah		19081010050</li>
-<li>4. Daffa Risky Pratama				19081010052</li>
-<li>5. Shawn Hafizh Adefrid				19081010055</li>
+    1. Eka Rizqi Mar’atus Sholihah		19081010022
+    2. Alfina Damayanti				    19081010039
+    3. Muhammad Rakha Firjatullah		19081010050
+    4. Daffa Risky Pratama				19081010052
+    5. Shawn Hafizh Adefrid				19081010055
 
 
 ## Cara Penggunaan
