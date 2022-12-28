@@ -9,14 +9,26 @@ CeritaKu merupakan sebuah aplikasi website yang dapat digunakan untuk menulis ce
     4. Daffa Risky Pratama				19081010052<br>
     5. Shawn Hafizh Adefrid				19081010055</p>
 
+## Teknologi yang digunakan
+Adapun teknologi yang digunakan pada pengembangan sistem atau aplikasi CeritaKu adalah sebagai berikut:
+
+#### Laravel
+Framework PHP yang digunakan untuk pengembangan aplikasi web. Laravel menyediakan beragam fitur yang mempermudah proses pengembangan aplikasi, seperti routing, autentikasi, dan manajemen database. Laravel juga menyediakan arsitektur MVC (Model-View-Controller) yang membantu dalam pembagian tugas antara front-end dan back-end.
+
+#### Bootstrap
+Framework CSS yang digunakan untuk membangun website dengan desain yang responsif. Bootstrap menyediakan komponen-komponen yang dapat digunakan untuk membuat layout website, seperti navbar, grid, dan form. Bootstrap juga menyediakan tema yang dapat digunakan untuk memberikan warna dan styling pada website.
+
+#### jQuery
+Library JavaScript yang digunakan untuk membangun aplikasi web interaktif. Jquery menyediakan beragam fitur yang mempermudah proses pengembangan aplikasi, seperti manipulasi DOM, animasi, dan pemrosesan event. Jquery juga menyediakan sintaks yang mudah digunakan dan memudahkan dalam pemrograman JavaScript.
 
 ## Cara Penggunaan
 Sesuai dengan deskripsi di awal, situs web CeritaKu ini berisi cerita-cerita dimana pengguna dapat membuat cerita secara pribadi dan dipublikasikan, setra pengguna juga dapat membaca cerita yang diunggah oleh pengguna lain.
+![img 12](desain/usecase.png)
 
-### Sebelum Masuk / Login
+#### Sebelum Masuk / Login
 Pada tahap awal sebelum login, pengguna akan diperlihatkan dengan situs web yang sederhana. Disini pengguna akan diperlihatkan menu search untuk mencari cerita yang ingin dibaca serta main menu berupa dasbor dan jelajah. Namun, pengguna yang belum login tidak dapat membuat serta membaca cerita. Pengguna akan dibawa ke halaman daftar dan melakukan login. Untuk menu login terletak di bagian profil, pengguna dapat memilih profil untuk login.
 
-### Setelah Login
+#### Setelah Login
 Pada tahap selanjutnya, pengguna kita asumsikan telah melakukan tahap login. Disini cara pengguna situs web CeritaKu tidak jauh berbeda saat user belum melakukan login. Yang berbeda hanya pengguna dapat melakukan penulisan cerita dan diunggah, serta bisa membaca cerita. User juga dapat melihat halaman profil yang terletak di foto profil bagian atas kanan. Pada foto profil bagian kanan atas juga terdapat fitur logout. Untuk melakukan penulisan cerita, pengguna bisa masuk ke menu jelajah dan memilih buat postingan.
 
 ## Fitur Aplikasi CeritaKu
